@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giỏ hàng</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <h1>Giỏ hàng</h1>
+    <nav>
+      <a href="/html/mucluc.html">Trang chủ</a>
+      <a href="/html/shop.html">Shop</a>
+      <a href="/html/napthe.html">Nạp thẻ</a>
+      <a href="/html/hoso.html">Hồ sơ</a>
+      <a href="/html/login.html">Đăng nhập</a>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <section class="cart-section">
+      <h2>Giỏ hàng của bạn</h2>
+      <div id="cart-empty" class="empty-state">Giỏ hàng trống. Hãy thêm sản phẩm vào giỏ.</div>
+      <table id="cart-table" class="cart-table hidden">
+        <thead>
+          <tr>
+            <th>Sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Tổng</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cart-body"></tbody>
+      </table>
+      <div id="cart-summary" class="cart-summary hidden">
+        <span>Tổng tiền: <strong id="cart-total">0 VND</strong></span>
+        <button id="checkout-button">Thanh toán</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/cart.js"></script>
+</body>
+</html>

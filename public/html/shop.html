@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Shop MMO</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>Shop MMO</h1>
+    <nav>
+      <a href="/html/mucluc.html">Trang chủ</a>
+      <a href="/html/napthe.html">Nạp thẻ</a>
+      <a href="/html/hoso.html">Hồ sơ</a>
+      <a href="/html/cart.html">Giỏ hàng</a>
+      <a href="/html/login.html">Đăng nhập</a>
+      <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <section class="products-section">
+      <div class="section-header">
+        <h2>Danh sách sản phẩm</h2>
+        <input id="search-input" class="search-input" type="text" placeholder="Tìm sản phẩm..." oninput="searchProducts()" />
+      </div>
+      <div class="filters">
+        <select id="rank-filter" onchange="applyFilters()">
+          <option value="">Tất cả rank</option>
+          <option value="Đồng">Đồng</option>
+          <option value="Bạc">Bạc</option>
+          <option value="Vàng">Vàng</option>
+          <option value="Bạch Kim">Bạch Kim</option>
+          <option value="Kim cương">Kim cương</option>
+          <option value="Tinh Anh">Tinh Anh</option>
+          <option value="Huyền Thoại">Huyền Thoại</option>
+        </select>
+        <input id="min-price" type="number" placeholder="Giá min" onchange="applyFilters()" />
+        <input id="max-price" type="number" placeholder="Giá max" onchange="applyFilters()" />
+        <input id="min-skins" type="number" placeholder="Skin min" onchange="applyFilters()" />
+        <input id="max-skins" type="number" placeholder="Skin max" onchange="applyFilters()" />
+      </div>
+      <div id="products" class="product-grid"></div>
+    </section>
+  </main>
+
+  <script src="../js/shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Nạp thẻ</title>
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <h2>Admin VIP</h2>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="products.html">Sản phẩm</a>
+      <a href="users.html">Người dùng</a>
+      <a href="orders.html">Đơn hàng</a>
+      <a href="napthe.html" class="active">Nạp thẻ</a>
+    </aside>
+    <main class="admin-content">
+      <div class="admin-banner">
+        <h1>Quản lý nạp thẻ</h1>
+        <p>Xem và xử lý yêu cầu nạp thẻ của khách hàng.</p>
+      </div>
+      <div class="admin-card">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Người dùng</th>
+              <th>Seri</th>
+              <th>Code</th>
+              <th>Giá</th>
+              <th>Trạng thái</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody id="napthe-table"></tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+  <script src="napthe.js"></script>
+</body>
+</html>

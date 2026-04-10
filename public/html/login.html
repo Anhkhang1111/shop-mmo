@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="auth-page">
+  <div class="particle-layer" aria-hidden="true"></div>
+  <div class="auth-shell">
+    <div class="auth-card pulse-border">
+      <div class="auth-badge">MMO VIP</div>
+      <h2>Đăng nhập</h2>
+      <p class="auth-desc">Bước vào shop siêu xịn với tài khoản của bạn.</p>
+      <div class="form-group">
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Nhập email">
+      </div>
+      <div class="form-group">
+        <label>Mật khẩu</label>
+        <input id="password" type="password" placeholder="Nhập mật khẩu">
+      </div>
+      <button class="glow-button" onclick="login()">Đăng nhập</button>
+      <p class="auth-link"><a href="/html/forgot.html">Quên mật khẩu?</a></p>
+      <div class="demo-panel">
+        <p>Hoặc test nhanh với tài khoản demo:</p>
+        <button type="button" class="demo-button" onclick="fillDemo('demo@shopvip.com', 'Demo@123')">Demo Admin</button>
+        <button type="button" class="demo-button" onclick="fillDemo('demo-user@shopvip.com', 'DemoUser@123')">Demo Khách</button>
+      </div>
+      <p class="auth-switch">Chưa có tài khoản? <a href="register.html">Đăng ký</a></p>
+    </div>
+  </div>
+  <script src="../js/login.js"></script>
+  <script src="../js/particles.js"></script>
+</body>
+</html>

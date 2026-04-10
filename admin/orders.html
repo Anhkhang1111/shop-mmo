@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Orders</title>
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <h2>Admin VIP</h2>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="products.html">Sản phẩm</a>
+      <a href="users.html">Người dùng</a>
+      <a href="orders.html" class="active">Đơn hàng</a>
+      <a href="napthe.html">Nạp thẻ</a>
+    </aside>
+    <main class="admin-content">
+      <div class="admin-banner">
+        <h1>Quản lý đơn hàng</h1>
+        <p>Xem đơn hàng của khách hàng và trạng thái thanh toán.</p>
+      </div>
+      <div class="admin-card">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Người dùng</th>
+              <th>Sản phẩm</th>
+              <th>Giá</th>
+              <th>Ngày</th>
+            </tr>
+          </thead>
+          <tbody id="order-table"></tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+  <script src="orders.js"></script>
+</body>
+</html>

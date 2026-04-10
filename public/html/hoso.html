@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hồ sơ</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>Hồ sơ người dùng</h1>
+    <nav>
+      <a href="/html/mucluc.html">Trang chủ</a>
+      <a href="/html/shop.html">Shop</a>
+      <a href="/html/napthe.html">Nạp thẻ</a>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <div id="profile-card" class="profile-card">
+      <h2>Thông tin người dùng</h2>
+      <div id="profile-content"></div>
+      <form id="update-profile-form" style="margin-top: 20px;">
+        <div class="form-group">
+          <label>Username</label>
+          <input id="update-username" placeholder="Username mới">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input id="update-email" type="email" placeholder="Email mới">
+        </div>
+        <button type="button" onclick="updateProfile()">Cập nhật hồ sơ</button>
+      </form>
+      <button onclick="logout()" style="margin-top: 10px;">Đăng xuất</button>
+    </div>
+
+    <div class="admin-card" style="margin-top: 24px;">
+      <h2>Đơn hàng của bạn</h2>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Sản phẩm</th>
+            <th>Giá</th>
+            <th>Ngày</th>
+          </tr>
+        </thead>
+        <tbody id="orders-table"></tbody>
+      </table>
+    </div>
+
+    <div class="admin-card" style="margin-top: 24px;">
+      <h2>Lịch sử giao dịch</h2>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Loại</th>
+            <th>Số tiền</th>
+            <th>Mô tả</th>
+            <th>Ngày</th>
+          </tr>
+        </thead>
+        <tbody id="transactions-table"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="../js/hoso.js"></script>
+</body>
+</html>

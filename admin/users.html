@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Users</title>
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <h2>Admin VIP</h2>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="products.html">Sản phẩm</a>
+      <a href="users.html" class="active">Người dùng</a>
+      <a href="orders.html">Đơn hàng</a>
+      <a href="napthe.html">Nạp thẻ</a>
+    </aside>
+    <main class="admin-content">
+      <div class="admin-banner">
+        <h1>Quản lý người dùng</h1>
+        <p>Xem danh sách người dùng và thông tin tài khoản.</p>
+      </div>
+      <div class="admin-card">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Vai trò</th>
+              <th>Tiền</th>
+            </tr>
+          </thead>
+          <tbody id="user-table"></tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+  <script src="users.js"></script>
+</body>
+</html>

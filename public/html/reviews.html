@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đánh giá shop</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <h1>Đánh giá shop</h1>
+    <nav>
+      <a href="/html/mucluc.html">Trang chủ</a>
+      <a href="/html/shop.html">Shop</a>
+      <a href="/html/hoso.html">Hồ sơ</a>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <section class="reviews-section">
+      <h2>Đánh giá của khách hàng</h2>
+      <div id="reviews-list"></div>
+      <div class="review-form">
+        <h3>Gửi đánh giá</h3>
+        <div class="form-group">
+          <label>Rating (1-5)</label>
+          <input id="rating" type="number" min="1" max="5" value="5">
+        </div>
+        <div class="form-group">
+          <label>Comment</label>
+          <textarea id="comment" rows="4" placeholder="Nhận xét của bạn"></textarea>
+        </div>
+        <button onclick="submitReview()">Gửi đánh giá</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/reviews.js"></script>
+</body>
+</html>
